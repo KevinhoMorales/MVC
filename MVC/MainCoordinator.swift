@@ -16,6 +16,7 @@ class MainCoordinator: Coordinator {
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+        self.navigationController.navigationBar.prefersLargeTitles = true
     }
     
     // DEVUELVE UNA INSTANACIA DEL VIEWCONTROLLER QUE LO LLAMA. NUESTRA PANTALLA PRINCIPAL
