@@ -11,7 +11,7 @@ import UIKit
 class ObjectDataSource: NSObject, UITableViewDataSource {
 
     var array = ["Kevinho Morales", "Jimena Jácome", "Madison Morales"]
-    var arrayDetail = ["26 años", "24 años", "3 años"]
+    var arrayDetail = ["26 years old", "24 years old", "3 years old"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         array.count

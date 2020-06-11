@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, Storiboarded {
+class ViewController: UIViewController, UITableViewDelegate, Storyboarded {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -18,6 +18,7 @@ class ViewController: UIViewController, UITableViewDelegate, Storiboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = dataSource
+        self.showAlert(withTitle: "Welcome", withMessage: "Family members", buttonOK: "OK")
         // Do any additional setup after loading the view.
     }
     

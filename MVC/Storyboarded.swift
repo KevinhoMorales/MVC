@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-protocol Storiboarded {
+protocol Storyboarded {
     
     static func instantiate() -> Self
     
 }
 
-extension Storiboarded where Self: UIViewController {
+extension Storyboarded where Self: UIViewController {
     
     static func instantiate() -> Self {
         let id = String(describing: self)

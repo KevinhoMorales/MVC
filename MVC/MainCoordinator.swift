@@ -27,8 +27,9 @@ class MainCoordinator: Coordinator {
     
     func goDetailView(with name: String, age: String) {
         let vc2 = ViewControllerDos.instantiate()
-        vc2.nameReceived = name
-        vc2.ageReceived = age
+        vc2.title = name
+        vc2.nameReceived = "My name is \(name)"
+        vc2.ageReceived = "I'm \(age)"
         vc2.coordinator = self
         navigationController.pushViewController(vc2, animated: true)
     }

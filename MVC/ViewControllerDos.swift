@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewControllerDos: UIViewController, Storiboarded {
+class ViewControllerDos: UIViewController, Storyboarded {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
@@ -19,7 +19,6 @@ class ViewControllerDos: UIViewController, Storiboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Data"
         
         nameLabel.text = nameReceived
         ageLabel.text = ageReceived
